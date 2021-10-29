@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html
+  style="
+    font-size: 30px;
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  "
+  lang="en"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/548c1eb206.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Trying Frames</title>
+  </head>
+  <body>
+    <header>
+      <nav align="center">
+        <a href="index.html">Main Page</a>&emsp;
+        <a href="page_1.html">Page 1</a>
+      </nav>
+    </header>
+    <main>
+      Inside main
+      <section>
+        <article>
+          <h3 style="background-color: rgb(104, 104, 194)">Create Iframes</h3>
+          <p>Map Iframes</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.4195415011236!2d-60.64545908427654!3d-32.966331380216104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7aba70b0eb38b%3A0x28b0daf21e353c89!2sSarmiento%20Y%20Ocampo!5e0!3m2!1sen!2sar!4v1629611461642!5m2!1sen!2sar"
+            width="450"
+            height="300"
+            style="border: 1"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+          <p>Loading my own page</p>
+          <iframe
+            src="index.html"
+            frameborder="1"
+            scrolling="yes"
+            width="450"
+          ></iframe>
+          <p>Loading a Youtube Vid</p>
+          <iframe
+            width="450"
+            height="300"
+            src="https://www.youtube.com/embed/saRt3gg6GFs"
+            title="La cocina de Jara"
+            frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            frameborder="1"
+          ></iframe>
+          <p>Local video with video tag</p>
+          <video
+            src="0.mp4"
+            controls
+            poster="3.jpg"
+            width="450"
+            type="video/mp4"
+          >
+            Loreena McKennit
+          </video>
+          <p>Loading a local audio file</p>
+          <audio
+            src="airsupply.mp3"
+            controls
+            muted
+            loop
+            type="audio/mp3"
+            width="450"
+          >
+            Airsupply
+          </audio>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

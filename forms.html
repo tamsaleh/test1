@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  style="
+    font-size: 30px;
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  "
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+    <script src = "script_1.js"></script>-->
+    <script
+      src="https://kit.fontawesome.com/548c1eb206.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  
+  <body>
+    <nav align="center">
+      <a href="index.html">Main Page</a>&emsp;
+      <a href="frames.html">Frames Page</a>&emsp;
+      <a href="page_1.html">Lists</a>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <p>
+                    <h3>Icons</h3>
+                    <i class="fas fa-burn"></i><br>
+                    <i class="fas fa-book"></i><br>
+                    <a href="http://twitter.com" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </p>
+            </article>
+        </section>
+      <section>
+        <article>
+          <h3>Forms</h3> 
+          <a name="datos_personales"></a>
+          <form action="" id = "lamia" method="post">
+            <script src = "script_1.js"></script>
+            <fieldset>
+              <legend>Datos Personales</legend>
+              <label for="empresa">Ingresar Empresa</label>
+              <input type="text" id="empresa" name="empresa" size="20" maxlength="20" value="TamCo" >
+              <br><br>
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" name="apellido" size="30" maxlength="8" placeholder="Enter Last name..." >
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" size="30" maxlength="80" placeholder="Enter Name..." >
+              <br><br>
+              <label for="DNI">DNI:</label>
+              <input type="number" id="DNI" name="DNI" size="30" maxlength="8" placeholder="Enter DNI..." >
+              <label for="ps">Password Minimum 6 Chars</label>
+              <input type="password" id="ps" name="ps" size="30" maxlength="14" minlength="6" placeholder="Enter password"> 
+              <br><br>
+              <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+              <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" size="30">
+              <label for="correo">Email:</label>
+              <input type="email" id="correo" name="correo" size="30" maxlength="40" value="Enter email..."> <br><br>
+              <label for="adjunto">Adjuntar Foto:</label>
+              <input type="file" id="adjunto" name="adjunto" size="30" maxlength="40">
+              <label for="tiempo">Ingrese la hora</label> 
+              <input type="time" id="tiempo" name="tiempo">
+            </fieldset>  <br><br>
+            <label for="comentarios">Ingresar Comentarios:</label> <br>
+            <textarea id="comentarios" name="comentarios" cols="60" rows="10" placeholder="Escribe tu consulta" ></textarea>
+            <br><br>
+            <label for="turno">Sleccionar Turno</label>
+            <select id="turno" name="turno">
+                <option value="1">Mañana</option>
+                <option value="2">Tarde</option>
+                <option value="3">Vespertino</option>
+                <option value="4">Noche</option>
+            </select>
+
+            <br><br>
+            <label for="turno1">Sleccionar Turno Usando Size elegiendo cuantos elementos visibles, aca 3</label> <br>
+            <select id="turno1" name="turno1" size="3">
+                <option value="5">Mañana</option>
+                <option value="6">Tarde</option>
+                <option value="7">Vespertino</option>
+                <option value="8">Noche</option>
+            </select>
+            <br><br>
+            <label for="turno2">Seleccionar Usando Multiple elegiendo mas elementos a la vez, sin size muestra todo</label> <br>
+            <select id="turno2" name="turno2"  multiple>
+                <option value="9">Mañana</option>
+                <option value="10">Tarde</option>
+                <option value="11">Vespertino</option>
+                <option value="12">Noche</option>
+            </select>
+            <br><br>
+
+            <h3>Checkbox and Radio Buttons</h3>
+            <p>Checkbox</p>
+            <label for="cono_pre">Conocimientos Previos:</label> <br>
+            <input type="checkbox" id="cono_pre" name="cono_pre" value="1"> HTML <br>
+            <input type="checkbox" id="cono_pre" name="cono_pre" value="2"> Python <br>
+            <input type="checkbox" id="cono_pre" name="cono_pre" value="3"> JavaScript <br>
+            <p>Radiobuttons</p>
+            <label for="rango_edad">Rango de Edad:</label> <br>
+            <input type="radio" id="rango_edad" name="rango_edad" value="1"> 18 a 21 años. <br>
+            <input type="radio" id="rango_edad" name="rango_edad" value="2"> 21 a 28 años. <br>
+            <input type="radio" id="rango_edad" name="rango_edad" value="3"> 28 a 35 años. <br>
+            <input type="radio" id="rango_edad" name="rango_edad" value="4"> 35 a 42 años. <br>
+            <br><br>
+            <p>Usar color con type de input "color":</p>
+            <label for="color_control">Elegir color:</label> <br>
+            <input type="color" id="color_control" name="color_control">
+            <br><br>
+            <p>Usar type number con valor minimo y valor maximo (min/max)</p>
+            <label for="hijos">Cantidad de hijos:</label> <br>
+            <input type="number" id="hijos" name="hijos" min="0" max="10">
+            <br><br>
+            <p>Usar el submit despues de un checkbox</p>
+            <label for="condiciones">Condiciones: 
+                <ol type="i">
+                    <li>Condicion1.</li>
+                    <li>Condicion2.</li>
+                    <li>Condicion3.</li>
+                </ol></label>
+            <input type="checkbox" id="condiciones" name="condiciones"> Acepto condiciones.
+            <br><br>
+            <input type="submit" value="Send Data">
+            <input type="reset" value="Reset Data">
+
+
+          </form>
+        </article>
+      </section>
+    </main>
+  </body>
+  <!--
+  <script>
+    var formulario = document.getElementById("lamia")
+    var error = []
+
+    formulario.addEventListener("submit", function(e) {
+    e.preventDefault()
+
+    var last_name = document.getElementById("apellido")
+
+    if (last_name.value == "") {
+      alert("Entra el apellido FORRROOOOO")
+
+    }
+
+    })
+  </script> -->
+</html>
